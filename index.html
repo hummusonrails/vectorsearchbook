@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastering Vector Search for Developers</title>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/favicon_io/site.webmanifest">
+    <link rel="mask-icon" href="/favicon_io/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/favicon_io/favicon.ico">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="msapplication-config" content="/favicon_io/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta name="description" content="{{ site.description }}">
+    <meta name="keywords" content="{{ site.keywords }}">
+    <meta name="author" content="{{ site.author }}">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="{{ site.title }}">
+    <meta property="og:description" content="{{ site.description }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ site.url }}">
+    <meta property="og:image" content="{{ site.url }}/book_site_placeholder_img.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ site.title }}">
+    <meta name="twitter:description" content="{{ site.description }}">
+    <meta name="twitter:image" content="{{ site.url }}/book_site_placeholder_img.png">
+    <meta name="twitter:site" content="@{{ site.twitter_username }}">
+
+    <link rel="canonical" href="{{ site.url }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #7B61FF, #FF6584);
+        }
+
+        .container {
+            max-width: 700px;
+            padding: 40px;
+            text-align: center;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 2.2em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+            line-height: 1.2em;
+            letter-spacing: -0.5px;
+        }
+        p {
+            font-size: 1.3em; 
+            font-weight: normal;
+            color: #555;
+            line-height: 1.4em;
+            margin-bottom: 20px;
+        }
+        .placeholder-image {
+            max-width: 100%;
+            height: auto;
+            overflow: hidden;
+            margin: 20px auto;
+            display: block;
+        }
+        .placeholder-image img {
+            width: 100%;
+            height: auto;
+            max-width: 300px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        #mc_embed_signup {
+            margin-top: 20px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .container {
+                width: 90%;
+                padding: 15px;
+            }
+
+            #mc_embed_signup {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Mastering Vector Search for Developers</h1>
+        <p><strong>Published by <a href="https://pragprog.com/">The Pragmatic Bookshelf</a></strong><br>Estimated release: February 2025</p>
+        <div class="placeholder-image">
+            <img src="book_site_placeholder_img.png" alt="Mastering Vector Search for Developers Book Cover">
+        </div>
+        <p>Sign up to get notified when the book is available!</p>
+
+        <div id="mc_embed_shell">
+            <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
+        <style type="text/css">
+              #mc_embed_signup{background:#fff; false;clear:left; font:14px Helvetica,Arial,sans-serif; width: 600px;}
+              /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+                 We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+      </style>
+      <div id="mc_embed_signup">
+          <form action="https://yalladevrel.us11.list-manage.com/subscribe/post?u=0482ce648ffc928e3e918bbc4&amp;id=1afd060f35&amp;f_id=0067e7e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+              <div id="mc_embed_signup_scroll">
+                  <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                  <div class="mc-field-group"><label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""></div>
+              <div id="mce-responses" class="clear foot">
+                  <div class="response" id="mce-error-response" style="display: none;"></div>
+                  <div class="response" id="mce-success-response" style="display: none;"></div>
+              </div>
+          <div aria-hidden="true" style="position: absolute; left: -5000px;">
+              /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
+              <input type="text" name="b_0482ce648ffc928e3e918bbc4_1afd060f35" tabindex="-1" value="">
+          </div>
+              <div class="optionalParent">
+                  <div class="clear foot">
+                      <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
+                      <p style="margin: 0px auto;"><a href="http://eepurl.com/iX-Eb2" title="Mailchimp - email marketing made easy and fun"><span style="display: inline-block; background-color: transparent; border-radius: 4px;"><img class="refferal_badge" src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" alt="Intuit Mailchimp" style="width: 220px; height: 40px; display: flex; padding: 2px 0px; justify-content: center; align-items: center;"></span></a></p>
+                  </div>
+              </div>
+          </div>
+      </form>
+      </div>
+      <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';fnames[6]='COMPANY';ftypes[6]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script></div>
+      
+    </div>    
+</body>
+</html>
