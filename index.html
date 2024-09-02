@@ -33,113 +33,39 @@
     <meta name="twitter:site" content="@{{ site.twitter_username }}">
 
     <link rel="canonical" href="{{ site.url }}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: linear-gradient(135deg, #7B61FF, #FF6584);
-        }
-
-        .container {
-            max-width: 700px;
-            padding: 40px;
-            margin: 20px auto;
-            text-align: center;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            font-size: 2.2em;
-            font-weight: bold;
-            color: #333;
-            margin-bottom: 10px;
-            line-height: 1.2em;
-            letter-spacing: -0.5px;
-        }
-        p {
-            font-size: 1.3em; 
-            font-weight: normal;
-            color: #555;
-            line-height: 1.4em;
-            margin-bottom: 20px;
-        }
-        .placeholder-image {
-            max-width: 100%;
-            height: auto;
-            overflow: hidden;
-            margin: 20px auto;
-            display: block;
-        }
-        .placeholder-image img {
-            width: 100%;
-            height: auto;
-            max-width: 300px;
-            display: block;
-            margin: 0 auto;
-        }
-
-        #mc_embed_signup {
-            margin-top: 20px;
-        }
-
-        @media only screen and (max-width: 600px) {
-            .container {
-                width: 90%;
-                padding: 15px;
-            }
-
-            #mc_embed_signup {
-                width: 100%;
-            }
-        }
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <div class="container">
-        <h1>Mastering Vector Search for Developers</h1>
-        <p><strong>Published by <a href="https://pragprog.com/">The Pragmatic Bookshelf</a></strong><br>Estimated release: February 2025</p>
-        <div class="placeholder-image">
-            <img src="book_site_placeholder_img.png" alt="Mastering Vector Search for Developers Book Cover">
+<body class="bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center min-h-screen p-4">
+    <div class="bg-white shadow-md rounded-lg max-w-xl w-full p-6 mx-auto text-center">
+        <h1 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
+            Mastering Vector Search for Developers
+        </h1>
+        <p class="text-lg text-gray-600 mb-6">
+            <strong>Published by <a href="https://pragprog.com/" class="text-blue-500 hover:underline">The Pragmatic Bookshelf</a></strong><br>
+            Estimated release: February 2025
+        </p>
+        <div class="mb-6">
+            <img src="book_site_placeholder_img.png" alt="Mastering Vector Search for Developers Book Cover" class="mx-auto w-64 h-auto rounded-lg shadow-lg">
         </div>
-        <p>Sign up to get notified when the book is available!</p>
-
-        <div id="mc_embed_shell">
-            <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
-        <style type="text/css">
-              #mc_embed_signup{background:#fff; false;clear:left; font:14px Helvetica,Arial,sans-serif; width: 600px;}
-              /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-                 We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-      </style>
-      <div id="mc_embed_signup">
-          <form action="https://yalladevrel.us11.list-manage.com/subscribe/post?u=0482ce648ffc928e3e918bbc4&amp;id=1afd060f35&amp;f_id=0067e7e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
-              <div id="mc_embed_signup_scroll">
-                  <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-                  <div class="mc-field-group"><label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""></div>
-              <div id="mce-responses" class="clear foot">
-                  <div class="response" id="mce-error-response" style="display: none;"></div>
-                  <div class="response" id="mce-success-response" style="display: none;"></div>
-              </div>
-          <div aria-hidden="true" style="position: absolute; left: -5000px;">
-              /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
-              <input type="text" name="b_0482ce648ffc928e3e918bbc4_1afd060f35" tabindex="-1" value="">
-          </div>
-              <div class="optionalParent">
-                  <div class="clear foot">
-                      <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
-                      <p style="margin: 0px auto;"><a href="http://eepurl.com/iX-Eb2" title="Mailchimp - email marketing made easy and fun"><span style="display: inline-block; background-color: transparent; border-radius: 4px;"><img class="refferal_badge" src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" alt="Intuit Mailchimp" style="width: 220px; height: 40px; display: flex; padding: 2px 0px; justify-content: center; align-items: center;"></span></a></p>
-                  </div>
-              </div>
-          </div>
-      </form>
-      </div>
-      <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';fnames[6]='COMPANY';ftypes[6]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script></div>
-      
-    </div>    
+        <p class="text-gray-700 mb-6">
+            Sign up to get notified when the book is available!
+        </p>
+        <div id="mc_embed_signup">
+            <form action="https://yalladevrel.us11.list-manage.com/subscribe/post?u=0482ce648ffc928e3e918bbc4&amp;id=1afd060f35&amp;v_id=1442&amp;f_id=0067e7e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate w-full" target="_blank">
+                <div class="mb-4">
+                    <label for="mce-EMAIL" class="sr-only">Email Address</label>
+                    <input type="email" name="EMAIL" id="mce-EMAIL" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="Enter your email" required>
+                </div>
+                <div class="flex justify-center">
+                    <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="bg-red-500 text-white px-6 py-3 rounded-lg hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-600">
+                        Subscribe
+                    </button>
+                </div>
+                <div class="mt-4 text-sm text-gray-600">
+                    <img src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" alt="Intuit Mailchimp" class="mx-auto w-40 h-auto">
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
