@@ -35,53 +35,113 @@
     <link rel="canonical" href="https://vectorsearchbook.com">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center min-h-screen p-4">
-    <div class="bg-white shadow-md rounded-lg max-w-xl w-full p-6 mx-auto">
-        <h1 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4 text-center">
-            Mastering Vector Search for Developers
-        </h1>
-        <p class="text-lg text-gray-600 mb-6 text-center">
-            <strong>Published by <a href="https://pragprog.com/" class="text-blue-500 hover:underline">The Pragmatic Bookshelf</a></strong><br>
-            Estimated release: February 2025
-        </p>
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-            <div class="mb-6 text-center">
-                <img src="book_site_placeholder_img.png" alt="Mastering Vector Search for Developers Book Cover" class="mx-auto w-64 h-auto rounded-lg shadow-lg">
-            </div>
-            
-            <div class="text-left">
-                <ul class="list-none text-lg text-gray-800">
-                    <li class="mb-4 transition duration-300 ease-in-out hover:text-purple-600 hover:underline">Intro to vector search</li>
-                    <li class="mb-4 transition duration-300 ease-in-out hover:text-purple-600 hover:underline">Building vector search in Node.js</li>
-                    <li class="mb-4 transition duration-300 ease-in-out hover:text-purple-600 hover:underline">Implementing similarity measures with JavaScript</li>
-                    <li class="mb-4 transition duration-300 ease-in-out hover:text-purple-600 hover:underline">Creating search functionality with Node.js examples</li>
-                    <li class="mb-4 transition duration-300 ease-in-out hover:text-purple-600 hover:underline">Optimizing search performance in JavaScript</li>
-                    <li class="mb-4 transition duration-300 ease-in-out hover:text-purple-600 hover:underline">Real-world Node.js applications for vector search</li>
-                </ul>
-            </div>
-            
-        </div>
+<body class="bg-gray-50 font-sans min-h-screen text-[#2d3748]">
 
-        <p class="text-gray-700 mb-6 text-center mt-6">
-            Sign up to get notified when the book is available!
-        </p>
-        <div id="mc_embed_signup" class="text-center">
-            <form action="https://yalladevrel.us11.list-manage.com/subscribe/post?u=0482ce648ffc928e3e918bbc4&amp;id=1afd060f35&amp;v_id=1442&amp;f_id=0067e7e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate w-full" target="_blank">
-                <div class="mb-4">
-                    <label for="mce-EMAIL" class="sr-only">Email Address</label>
-                    <input type="email" name="EMAIL" id="mce-EMAIL" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="Enter your email" required>
-                </div>
-                <div class="flex justify-center">
-                    <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="bg-red-500 text-white px-6 py-3 rounded-lg hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-600">
-                        Subscribe
-                    </button>
-                </div>
-                <div class="mt-4 text-sm text-gray-600">
-                    <img src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" alt="Intuit Mailchimp" class="mx-auto w-40 h-auto">
-                </div>
-            </form>
-        </div>
+  <div class="max-w-4xl mx-auto p-6">
+    <!-- Hero Section -->
+    <div class="flex flex-col md:flex-row items-center md:items-start gap-8 bg-white shadow-lg rounded-xl p-8 border-2 border-blue-900 mb-10">
+      <img src="book_site_placeholder_img.png" alt="Mastering Vector Search for Developers Book Cover" class="w-48 h-auto rounded-lg shadow-md mb-6 md:mb-0">
+      <div>
+        <h1 class="text-4xl font-extrabold text-blue-900 mb-2">Mastering Vector Search for Developers</h1>
+        <p class="text-lg text-teal-500 font-bold mb-2">By Ben Greenberg</p>
+        <p class="text-base mb-4"><span class="font-bold text-red-500">Coming Soon</span> from <a href="https://pragprog.com/" class="text-red-500 hover:underline font-bold">The Pragmatic Bookshelf</a></p>
+        <p class="mb-4">Welcome to the world of vector search! This book is your guide to understanding and implementing vector search systems, blending theory with hands-on code examples. Whether you’re a backend engineer or a curious developer, you’ll learn to build intelligent, efficient search systems that deliver value to your users.</p>
+        <a href="#newsletter" class="inline-block bg-red-400 text-white px-5 py-2 rounded-lg font-semibold shadow-lg border border-red-400 hover:bg-red-500 focus:outline-none focus:ring-2 focus:ring-red-400 transition">Get Notified When Released</a>
+      </div>
     </div>
+
+    <!-- Project Highlight -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-bold text-blue-900 mb-3">Featured Project</h2>
+      <div class="bg-teal-50 border-l-4 border-teal-400 p-6 rounded-lg shadow">
+        <h3 class="text-xl font-semibold mb-2">RealWorld Example App: Vector Search Edition</h3>
+        <p class="mb-2">Throughout the book, you’ll enhance a full-stack blogging platform (inspired by Medium) with vector-powered functionality. You’ll embed content, enable similarity search, and layer in hybrid techniques to create a modern, intelligent search experience. This project grounds every concept in practical, real-world implementation.</p>
+        <span class="inline-block bg-[#38b2ac] text-white px-3 py-1 rounded text-sm font-medium">Hands-on Project</span>
+      </div>
+    </section>
+
+    <!-- About the Book -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-bold text-blue-900 mb-3">About the Book</h2>
+      <div class="bg-white border border-gray-200 rounded-lg p-6 shadow">
+        <p class="mb-2">Vector search leverages advanced machine learning to deliver relevant, context-aware results. This book covers:</p>
+        <ul class="list-disc ml-6 space-y-1">
+          <li>What vector search is and why it matters</li>
+          <li>Generating and using vector embeddings</li>
+          <li>Building a vector search backend in Node.js</li>
+          <li>Designing and optimizing search APIs</li>
+          <li>Hybrid and advanced search techniques</li>
+          <li>Real-world use cases and practical tips</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Table of Contents -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-bold text-blue-900 mb-3">Table of Contents</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="bg-gray-50 border-l-4 border-blue-900 p-4 rounded">
+          <h3 class="font-semibold mb-1">Part I — Foundations of Vector Search</h3>
+          <ul class="list-disc ml-5 text-sm">
+            <li>Getting Started with Vector Search</li>
+            <li>Understanding Vector Search</li>
+            <li>Generating Vector Embeddings</li>
+          </ul>
+        </div>
+        <div class="bg-gray-50 border-l-4 border-blue-900 p-4 rounded">
+          <h3 class="font-semibold mb-1">Part II — Building a Vector Search Service</h3>
+          <ul class="list-disc ml-5 text-sm">
+            <li>Building the Foundation for Vector Search</li>
+            <li>Structuring the Backend for Vector Search</li>
+            <li>Building the Vector Embedding Generation Service</li>
+            <li>Creating a Vector Search Service</li>
+            <li>Creating a Vector Search Index</li>
+            <li>Incorporating Vector Search Functionality</li>
+            <li>Optimizing Search Results</li>
+            <li>Key Takeaways and Practical Applications</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="mb-10">
+      <div id="newsletter" class="bg-teal-50 border-l-4 border-teal-400 p-8 rounded-xl shadow flex flex-col items-center">
+        <h2 class="text-2xl font-extrabold text-blue-900 mb-2">Stay Updated!</h2>
+        <p class="mb-4 text-[#2d3748] text-center">Sign up to get notified when the book is available and receive updates on vector search resources.</p>
+        <form action="https://yalladevrel.us11.list-manage.com/subscribe/post?u=0482ce648ffc928e3e918bbc4&amp;id=1afd060f35&amp;v_id=1442&amp;f_id=0067e7e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="w-full max-w-md" target="_blank">
+          <div class="flex flex-col sm:flex-row gap-3">
+            <label for="mce-EMAIL" class="sr-only">Email Address</label>
+            <input type="email" name="EMAIL" id="mce-EMAIL" class="flex-1 p-3 border border-[#b2f5ea] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#38b2ac] focus:border-transparent" placeholder="Enter your email" required>
+            <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="bg-red-400 text-white px-6 py-3 rounded-lg font-semibold shadow-lg border border-red-400 hover:bg-red-500 focus:outline-none focus:ring-2 focus:ring-red-400 transition">Subscribe</button>
+          </div>
+          <div class="mt-4 text-sm text-gray-600 flex justify-center">
+            <img src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" alt="Intuit Mailchimp" class="w-40 h-auto">
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Author Bio -->
+    <section class="mb-10 flex items-center gap-6 bg-white border-2 border-teal-400 rounded-xl p-6 shadow-lg">
+      <img src="ben.png" alt="Ben Greenberg photo" class="w-20 h-20 rounded-full border-2 border-teal-400 shadow-md object-cover">
+      <div>
+        <h2 class="text-xl font-extrabold text-blue-900 mb-1">About the Author</h2>
+        <p class="mb-2">Ben Greenberg is a developer advocate, educator, and author passionate about making complex topics accessible to all. He writes and speaks about modern software engineering, search, and developer productivity.</p>
+        <a href="https://twitter.com/hummusonrails" class="text-teal-500 hover:underline">@hummusonrails</a>
+      </div>
+    </section>
+
+    <!-- Footer / Publisher -->
+  </div>
+  <footer class="text-center py-6 text-sm text-white bg-blue-900 mt-10 rounded-b-xl">
+    <p>&copy; <span id="footer-year"></span> Ben Greenberg. Published by <a href="https://pragprog.com/" class="text-red-500 hover:underline">The Pragmatic Bookshelf</a>.</p>
+    <a href="https://github.com/hummusonrails/vector-example-blog-platform" target="_blank" rel="noopener" class="inline-block mt-2" title="View Example Project on GitHub">
+      <svg class="mx-auto" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="color:white;" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.426 2.865 8.18 6.839 9.504.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.461-1.11-1.461-.908-.62.069-.608.069-.608 1.004.07 1.533 1.032 1.533 1.032.892 1.53 2.341 1.089 2.91.833.091-.647.35-1.089.636-1.34-2.221-.254-4.555-1.113-4.555-4.951 0-1.093.39-1.987 1.029-2.687-.104-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.295 2.748-1.025 2.748-1.025.546 1.378.204 2.397.1 2.65.64.7 1.028 1.594 1.028 2.687 0 3.847-2.337 4.695-4.566 4.945.359.309.679.919.679 1.853 0 1.338-.012 2.419-.012 2.749 0 .267.18.577.688.479C19.138 20.197 22 16.444 22 12.021 22 6.484 17.523 2 12 2Z" fill="currentColor"/>
+      </svg>
+    </a>
+    <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+  </footer>
 </body>
 </html>
