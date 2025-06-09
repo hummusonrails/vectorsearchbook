@@ -8,11 +8,12 @@ function jaccardSimilarity(a, b) {
 
 function simulateSearch(query) {
   if (!query) return [];
-  const scores = pragmaticTitles.map(title => ({
-    title,
-    score: jaccardSimilarity(query, title)
+  const scores = pragmaticBooks.map(book => ({
+    title: book.title,
+    url: book.url,
+    score: jaccardSimilarity(query, book.title)
   }));
-  return scores.sort((a,b) => b.score - a.score).slice(0,5);
+  return scores.sort((a, b) => b.score - a.score).slice(0, 5);
 }
 
 function handleSearch() {
@@ -26,7 +27,12 @@ function handleSearch() {
     if (results.length === 0) {
       resultsDiv.innerHTML = '<p>No similar titles found.</p>';
     } else {
-      resultsDiv.innerHTML = results.map(r => `<p class="mb-1">${r.title}</p>`).join('');
+      resultsDiv.innerHTML = results
+        .map(r => {
+          const pct = Math.round(r.score * 100);
+          return `<p class="mb-1"><a href="${r.url}" target="_blank" rel="noopener" class="text-blue-600 hover:underline">${r.title}</a> <span class="text-sm text-gray-600">${pct}%</span></p>`;
+        })
+        .join('');
     }
   }, 800);
 }
