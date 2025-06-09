@@ -81,20 +81,39 @@
       </div>
     </section>
 
-    <!-- Simulated Semantic Search -->
+    <!-- Simulated Vector Search -->
     <section class="mb-10">
       <h2 class="text-2xl font-bold text-blue-900 mb-3 inline-block border-b-4 border-transparent bg-gradient-to-r from-blue-400 to-teal-400 bg-clip-text text-transparent">Experience Vector Search in Action</h2>
       <div class="bg-white/80 dark:bg-gray-900/80 text-gray-900 dark:text-gray-100 border-l-4 border-blue-400 p-8 rounded-xl shadow flex flex-col items-center">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-blue-500 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
-        <p class="mb-4 text-center">Vector search finds content by meaning. Try it by suggesting a title and see which Pragmatic Bookshelf books are most alike.</p>
+        <p class="mb-4 text-lg text-gray-700 dark:text-gray-300 text-center">
+  Vector search finds content by meaning. Try it by suggesting a title for this book and see which Pragmatic Bookshelf book titles are most alike.
+  <span class="align-super text-red-500 font-bold text-base ml-1">*</span>
+</p>
         <div class="flex flex-col sm:flex-row gap-3 w-full max-w-md">
           <label for="search-input" class="sr-only">Book Title</label>
           <input id="search-input" type="text" placeholder="Your suggested title" class="flex-1 p-3 dark:bg-gray-800 dark:border-gray-600 dark:text-white border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" />
-          <button id="search-btn" class="bg-blue-500 text-white px-6 py-3 rounded-lg font-semibold shadow border border-blue-500 hover:bg-blue-600 focus:outline-none focus-visible:ring-4 focus-visible:ring-blue-300 focus-visible:ring-offset-2">Search</button>
+          <button id="search-btn" class="inline-block bg-gradient-to-r from-blue-400 to-teal-400 text-white px-5 py-2 rounded-lg font-semibold shadow-lg border border-blue-400 hover:from-blue-500 hover:to-teal-500 focus:outline-none focus:ring-2 focus:ring-blue-400 transition transform hover:scale-105 active:scale-95">Search</button>
         </div>
         <div id="search-results" class="mt-4 w-full max-w-md text-left"></div>
+<p class="mt-6 text-xs text-gray-500 dark:text-gray-400 text-center">
+  * This is a simulated demo experience. Results do not reflect a real vector search engine.
+</p>
       </div>
     </section>
+    <script>
+      // Allow search by pressing Enter in the input
+      const searchInput = document.getElementById('search-input');
+      const searchBtn = document.getElementById('search-btn');
+      if (searchInput && searchBtn) {
+        searchInput.addEventListener('keydown', function(event) {
+          if (event.key === 'Enter') {
+            event.preventDefault();
+            searchBtn.click();
+          }
+        });
+      }
+    </script>
 
     <!-- About the Book -->
     <section class="mb-10 bg-blue-50/80 border-4 border-gradient-to-r from-blue-400 via-teal-400 to-pink-400 rounded-2xl p-8 shadow-2xl backdrop-blur-md dark:bg-gray-800/80">
@@ -212,7 +231,7 @@
       <h2 class="text-2xl font-bold text-blue-900 mb-3 inline-block border-b-4 border-transparent bg-gradient-to-r from-teal-400 to-pink-400 bg-clip-text text-transparent">Stay Updated!</h2>
       <div id="newsletter" class="bg-white/80 dark:bg-gray-900/80 text-gray-900 dark:text-gray-100 border-l-4 border-teal-400 p-8 rounded-xl shadow-2xl backdrop-blur-md flex flex-col items-center">
         <h2 class="text-2xl font-extrabold text-blue-900 dark:text-white mb-2">Stay Updated!</h2>
-        <p class="mb-4 text-[#2d3748] dark:text-gray-300 text-center">Sign up to get notified when the book is available and receive updates on vector search resources.</p>
+        <p class="mb-4 text-lg text-gray-700 dark:text-gray-300 text-center">Sign up to get notified when the book is available and receive updates on vector search resources.</p>
         <form action="https://yalladevrel.us11.list-manage.com/subscribe/post?u=0482ce648ffc928e3e918bbc4&amp;id=1afd060f35&amp;v_id=1442&amp;f_id=0067e7e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="w-full max-w-md" target="_blank">
           <div class="flex flex-col sm:flex-row gap-3">
             <label for="mce-EMAIL" class="sr-only">Email Address</label>
