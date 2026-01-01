@@ -39,24 +39,23 @@
 <body class="bg-gray-50 text-gray-900 antialiased">
   <!-- Header -->
   <header class="w-full bg-white shadow-sm sticky top-0 z-50 dark:bg-gray-800">
-    <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between px-4 py-3 gap-3">
+      <a href="#hero" class="flex items-center gap-2 font-extrabold text-xl text-blue-900 dark:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-400 rounded">Vector Search with JavaScript</a>
       <nav class="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm md:text-base md:gap-6 flex-shrink-0">
-        <span class="flex items-center gap-2 font-extrabold text-xl text-blue-900 dark:text-white">Vector Search with JavaScript</span>
-        <a href="https://pragprog.com/titles/bgvector/vector-search-with-javascript/" class="text-gray-700 dark:text-gray-300 hover:text-teal-500 dark:hover:text-teal-400 font-semibold transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-400 rounded">Pragmatic Bookshelf</a>
-        <a href="https://github.com/hummusonrails/vector-example-blog-platform" class="text-gray-700 dark:text-gray-300 hover:text-teal-500 dark:hover:text-teal-400 font-semibold transition-colors duration-200 flex items-center gap-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-400 rounded" target="_blank" rel="noopener">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.166 6.84 9.49.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.64.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.98 1.03-2.68-.1-.26-.45-1.29.1-2.68 0 0 .84-.27 2.75 1.02A9.52 9.52 0 0112 7.07c.85.004 1.71.11 2.51.32 1.91-1.29 2.75-1.02 2.75-1.02.55 1.39.2 2.42.1 2.68.64.7 1.03 1.59 1.03 2.68 0 3.85-2.34 4.7-4.57 4.95.36.31.68.92.68 1.85v2.75c0 .27.18.58.69.48A10.01 10.01 0 0022 12c0-5.52-4.48-10-10-10z"/></svg>
-          Project
-        </a>
-        <a href="https://bengreenberg.dev" class="text-gray-700 dark:text-gray-300 hover:text-teal-500 dark:hover:text-teal-400 font-semibold transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-400 rounded">Author</a>
+        <a href="#featured-project" class="text-gray-700 dark:text-gray-300 hover:text-teal-500 dark:hover:text-teal-400 font-semibold transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-400 rounded">Project</a>
+        <a href="#demo" class="text-gray-700 dark:text-gray-300 hover:text-teal-500 dark:hover:text-teal-400 font-semibold transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-400 rounded">Demo</a>
+        <a href="#about" class="text-gray-700 dark:text-gray-300 hover:text-teal-500 dark:hover:text-teal-400 font-semibold transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-400 rounded">About the Book</a>
+        <a href="#subscribe" class="text-gray-700 dark:text-gray-300 hover:text-teal-500 dark:hover:text-teal-400 font-semibold transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-400 rounded">Stay Updated</a>
+        <a href="#author" class="text-gray-700 dark:text-gray-300 hover:text-teal-500 dark:hover:text-teal-400 font-semibold transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-400 rounded">Author</a>
       </nav>
       <!-- Dark Mode Toggle Far Right -->
       
     </div>
   </header>
 
-  <div class="max-w-4xl mx-auto p-6">
+  <div class="max-w-4xl mx-auto p-6 space-y-12">
     <!-- Hero Section -->
-    <div class="flex flex-col md:flex-row items-center md:items-start gap-8 bg-white shadow-lg rounded-xl p-8 border-2 border-blue-900 mb-10">
+    <section id="hero" class="scroll-mt-24 flex flex-col md:flex-row items-center md:items-start gap-8 bg-white shadow-lg rounded-xl p-8 border-2 border-blue-900">
       <img src="book_cover.png" alt="Vector Search with JavaScript Book Cover" class="w-48 h-auto rounded-lg shadow-md mb-6 md:mb-0">
       <div>
         <h1 class="text-4xl font-extrabold text-blue-900 mb-2 inline-block border-b-4 border-transparent bg-gradient-to-r from-blue-400 to-teal-400 bg-clip-text text-transparent">Vector Search with JavaScript</h1>
@@ -73,41 +72,54 @@
 </p>
         
         <p class="mb-4">Welcome to the world of vector search! This book is your guide to understanding and implementing vector search systems, blending theory with hands-on code examples. Whether you’re a backend engineer or a curious developer, you’ll learn to build intelligent, efficient search systems that deliver value to your users.</p>
-        <a href="https://pragprog.com/titles/bgvector/vector-search-with-javascript/" class="inline-block bg-red-400 text-white px-5 py-2 rounded-lg font-semibold shadow-lg border border-red-400 hover:bg-red-500 focus:outline-none focus:ring-2 focus:ring-red-400 transition" target="_blank" rel="noopener">Get Your Copy</a>
+        <a href="https://pragprog.com/titles/bgvector/vector-search-with-javascript/" class="inline-block bg-blue-600 text-white px-5 py-2 rounded-lg font-semibold shadow-lg border border-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 transition" target="_blank" rel="noopener">Get Your Copy</a>
       </div>
-    </div>
+    </section>
+
+    <!-- Simulated Vector Search -->
+    <section id="demo" class="scroll-mt-24 bg-white/80 dark:bg-gray-900/80 text-gray-900 dark:text-gray-100 border-l-4 border-blue-400 p-8 rounded-xl shadow flex flex-col items-center">
+      <h2 class="text-2xl font-bold text-blue-900 mb-3 inline-block border-b-4 border-transparent bg-gradient-to-r from-blue-400 to-teal-400 bg-clip-text text-transparent">Experience Vector Search in Action</h2>
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-blue-500 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+      <p class="mb-4 text-lg text-gray-700 dark:text-gray-300 text-center">
+        Vector search finds content by meaning. Try it by suggesting a title for this book and see which Pragmatic Bookshelf book titles are most alike.
+        <span class="align-super text-red-500 font-bold text-base ml-1">*</span>
+      </p>
+      <div class="flex flex-col sm:flex-row gap-3 w-full max-w-md">
+        <label for="search-input" class="sr-only">Book Title</label>
+        <input id="search-input" type="text" placeholder="Your suggested title" class="flex-1 p-3 dark:bg-gray-800 dark:border-gray-600 dark:text-white border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" />
+        <button id="search-btn" class="inline-block bg-gradient-to-r from-blue-400 to-teal-400 text-white px-5 py-2 rounded-lg font-semibold shadow-lg border border-blue-400 hover:from-blue-500 hover:to-teal-500 focus:outline-none focus:ring-2 focus:ring-blue-400 transition transform hover:scale-105 active:scale-95">Search</button>
+      </div>
+      <div id="search-results" class="mt-4 w-full max-w-md text-left"></div>
+      <p class="mt-6 text-xs text-gray-500 dark:text-gray-400 text-center">
+        * This is a simulated demo experience. Results do not reflect a real vector search engine.
+      </p>
+    </section>
 
     <!-- Project Highlight -->
-    <section class="mb-10">
+    <section id="featured-project" class="scroll-mt-24 bg-blue-50/70 border border-blue-100 rounded-2xl p-8 shadow-lg">
       <h2 class="text-2xl font-bold text-blue-900 mb-3 inline-block border-b-4 border-transparent bg-gradient-to-r from-blue-400 to-teal-400 bg-clip-text text-transparent">Featured Project</h2>
       <div class="bg-teal-50 border-l-4 border-teal-400 p-6 rounded-lg shadow flex flex-col md:flex-row gap-6 items-center">
   <img src="example_diagram.png" alt="Vector Search Example Diagram" class="w-full md:w-64 h-auto rounded shadow-md mb-4 md:mb-0">
   <div class="flex-1">
         <h3 class="text-xl font-semibold mb-2">RealWorld Example App: Vector Search Edition</h3>
         <p class="mb-2">Throughout the book, you’ll enhance a full-stack blogging platform (inspired by Medium) with vector-powered functionality. You’ll embed content, enable similarity search, and layer in hybrid techniques to create a modern, intelligent search experience. This project grounds every concept in practical, real-world implementation.</p>
-        <a href="https://github.com/hummusonrails/vector-example-blog-platform" target="_blank" rel="noopener" class="inline-block bg-[#38b2ac] text-white px-3 py-1 rounded text-sm font-medium animate-pulse hover:bg-teal-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-400 transition-colors duration-200" title="View Hands-on Project on GitHub">Hands-on Project <i class="fab fa-github ml-1"></i></a>
   </div>
       </div>
     </section>
 
-    <!-- Simulated Vector Search -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-bold text-blue-900 mb-3 inline-block border-b-4 border-transparent bg-gradient-to-r from-blue-400 to-teal-400 bg-clip-text text-transparent">Experience Vector Search in Action</h2>
-      <div class="bg-white/80 dark:bg-gray-900/80 text-gray-900 dark:text-gray-100 border-l-4 border-blue-400 p-8 rounded-xl shadow flex flex-col items-center">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-blue-500 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
-        <p class="mb-4 text-lg text-gray-700 dark:text-gray-300 text-center">
-  Vector search finds content by meaning. Try it by suggesting a title for this book and see which Pragmatic Bookshelf book titles are most alike.
-  <span class="align-super text-red-500 font-bold text-base ml-1">*</span>
-</p>
-        <div class="flex flex-col sm:flex-row gap-3 w-full max-w-md">
-          <label for="search-input" class="sr-only">Book Title</label>
-          <input id="search-input" type="text" placeholder="Your suggested title" class="flex-1 p-3 dark:bg-gray-800 dark:border-gray-600 dark:text-white border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" />
-          <button id="search-btn" class="inline-block bg-gradient-to-r from-blue-400 to-teal-400 text-white px-5 py-2 rounded-lg font-semibold shadow-lg border border-blue-400 hover:from-blue-500 hover:to-teal-500 focus:outline-none focus:ring-2 focus:ring-blue-400 transition transform hover:scale-105 active:scale-95">Search</button>
-        </div>
-        <div id="search-results" class="mt-4 w-full max-w-md text-left"></div>
-<p class="mt-6 text-xs text-gray-500 dark:text-gray-400 text-center">
-  * This is a simulated demo experience. Results do not reflect a real vector search engine.
-</p>
+    <!-- Order & Project -->
+    <section id="resources" class="scroll-mt-24 bg-white border border-blue-100 rounded-2xl p-8 shadow-lg">
+      <h2 class="text-2xl font-bold text-blue-900 mb-3 inline-block border-b-4 border-transparent bg-gradient-to-r from-blue-400 to-teal-400 bg-clip-text text-transparent">Order &amp; Project</h2>
+      <p class="mb-6 text-gray-700">Grab the book and explore the hands-on project that anchors every chapter.</p>
+      <div class="flex flex-col sm:flex-row gap-4">
+        <a href="https://pragprog.com/titles/bgvector/vector-search-with-javascript/" class="inline-flex items-center justify-center bg-blue-600 text-white px-5 py-2 rounded-lg font-semibold shadow-lg border border-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 transition" target="_blank" rel="noopener">Get Your Copy</a>
+        <a href="https://github.com/hummusonrails/vector-example-blog-platform" target="_blank" rel="noopener" class="inline-flex items-center justify-center bg-teal-500 text-white px-5 py-2 rounded-lg font-semibold shadow-lg border border-teal-500 hover:bg-teal-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-400 transition">
+          Hands-on Project <i class="fab fa-github ml-2"></i>
+        </a>
+      </div>
+      <div class="mt-4 text-sm text-gray-600 flex flex-wrap gap-4">
+        <a href="https://pragprog.com/" target="_blank" rel="noopener" class="hover:underline">The Pragmatic Bookshelf</a>
+        <a href="https://bengreenberg.dev" class="hover:underline" target="_blank" rel="noopener">Author Site</a>
       </div>
     </section>
     <script>
@@ -125,127 +137,90 @@
     </script>
 
     <!-- About the Book -->
-    <section class="mb-10 bg-blue-50/80 border-4 border-gradient-to-r from-blue-400 via-teal-400 to-pink-400 rounded-2xl p-8 shadow-2xl backdrop-blur-md dark:bg-gray-800/80">
+    <section id="about" class="scroll-mt-24 bg-blue-50/80 border border-blue-200 rounded-2xl p-8 shadow-2xl backdrop-blur-md dark:bg-gray-800/80">
       <h2 class="text-2xl font-bold text-blue-900 mb-6 inline-block border-b-4 border-transparent bg-gradient-to-r from-blue-400 to-pink-400 bg-clip-text text-transparent">About the Book</h2>
-      <button id="about-toggle" class="mb-6 flex items-center gap-2 text-blue-900 font-bold focus:outline-none focus-visible:ring-4 focus-visible:ring-blue-400 focus-visible:ring-offset-2 px-4 py-2 rounded-lg transition-shadow transition-colors duration-200 ring-1 ring-blue-200 hover:bg-blue-100/60 active:scale-95 dark:text-white dark:ring-blue-600 dark:hover:bg-blue-900/40" aria-expanded="false">
-        <svg id="about-chevron" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-        What's Inside the Book
-      </button>
-      <div id="about-content" class="mt-6 hidden">
-        <div class="">
-          <ul class="list-none ml-0 pl-0 grid grid-cols-1 md:grid-cols-2 gap-6">
-            </ul>
-<div class="bg-gradient-to-br from-blue-50 via-teal-50 to-white rounded-xl shadow p-6 mb-4 md:flex md:items-center md:gap-8">
-  <div class="flex-shrink-0 flex justify-center items-center w-full md:w-40 mb-4 md:mb-0">
-    <!-- Information Icon -->
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M12 2a10 10 0 100 20 10 10 0 000-20z"/></svg>
-  </div>
-  <div class="flex-1 text-center md:text-left">
-    <p class="mb-1 text-xl md:text-2xl font-semibold text-blue-900">Vector search leverages <span class="text-teal-500 font-bold">advanced machine learning</span> to deliver relevant, context-aware results.</p>
-    <p class="mb-0 text-lg text-gray-700">This book covers:</p>
-  </div>
-</div>
-<ul class="list-none ml-0 pl-0 grid grid-cols-1 md:grid-cols-2 gap-6">
-            <!-- Card 1: Info -->
-            <li tabindex="0" role="button" aria-expanded="false" aria-controls="about-blurb-1" onclick="toggleBlurb('about-blurb-1', this)" onkeydown="if(event.key==='Enter'||event.key===' '){toggleBlurb('about-blurb-1', this)}" class="relative bg-blue-50 dark:bg-gray-700  transition-transform duration-200 hover:scale-105 active:scale-95 focus:outline-none focus-visible:ring-4 focus-visible:ring-teal-400 focus-visible:ring-offset-2 border-l-4 border-blue-400 rounded-lg shadow px-6 py-4 mb-0 flex items-start gap-4 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-400 hover:scale-[1.03] hover:shadow-2xl transition-all group">
-              <span class="flex-shrink-0 mt-1 text-blue-500">
-                <!-- Info Icon -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M12 2a10 10 0 100 20 10 10 0 000-20z"/></svg>
-              </span>
-              <div class="flex-1">
-                <span class="font-semibold text-blue-900 dark:text-white">What vector search is and why it matters</span>
-                <span class="ml-auto flex items-center justify-center">
-                  <svg class="chevron h-7 w-7 text-blue-400 transition-transform duration-300 group-aria-expanded:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-                </span>
-                <span id="about-blurb-1" class="block italic text-blue-700 dark:text-gray-200 text-base mt-3 hidden">Understand the fundamental concepts behind vector search and why it’s revolutionizing how we build search systems.</span>
-              </div>
-            </li>
-            <!-- Card 2: Chip -->
-            <li tabindex="0" role="button" aria-expanded="false" aria-controls="about-blurb-2" onclick="toggleBlurb('about-blurb-2', this)" onkeydown="if(event.key==='Enter'||event.key===' '){toggleBlurb('about-blurb-2', this)}" class="relative bg-teal-50 dark:bg-gray-700  transition-transform duration-200 hover:scale-105 active:scale-95 focus:outline-none focus-visible:ring-4 focus-visible:ring-teal-400 focus-visible:ring-offset-2 border-l-4 border-teal-400 rounded-lg shadow px-6 py-4 mb-0 flex items-start gap-4 cursor-pointer focus:outline-none focus:ring-2 focus:ring-teal-400 hover:scale-[1.03] hover:shadow-2xl transition-all group">
-              <span class="flex-shrink-0 mt-1 text-teal-500">
-                <!-- Chip Icon -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><rect x="4" y="4" width="16" height="16" rx="4"/><path d="M9 9h6v6H9z"/></svg>
-              </span>
-              <div class="flex-1">
-                <span class="font-semibold text-blue-900 dark:text-white">Generating and using vector embeddings</span>
-                <span class="ml-auto flex items-center justify-center">
-                  <svg class="chevron h-7 w-7 text-teal-400 transition-transform duration-300 group-aria-expanded:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-                </span>
-                <span id="about-blurb-2" class="block italic text-blue-700 dark:text-gray-200 text-base mt-3 hidden">Learn practical techniques to create, store, and leverage embeddings for real-world data and applications.</span>
-              </div>
-            </li>
-            <!-- Card 3: Server -->
-            <li tabindex="0" role="button" aria-expanded="false" aria-controls="about-blurb-3" onclick="toggleBlurb('about-blurb-3', this)" onkeydown="if(event.key==='Enter'||event.key===' '){toggleBlurb('about-blurb-3', this)}" class="relative bg-green-50 dark:bg-gray-700  transition-transform duration-200 hover:scale-105 active:scale-95 focus:outline-none focus-visible:ring-4 focus-visible:ring-teal-400 focus-visible:ring-offset-2 border-l-4 border-green-400 rounded-lg shadow px-6 py-4 mb-0 flex items-start gap-4 cursor-pointer focus:outline-none focus:ring-2 focus:ring-green-400 hover:scale-[1.03] hover:shadow-2xl transition-all group">
-              <span class="flex-shrink-0 mt-1 text-green-500">
-                <!-- Server Icon -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><rect x="3" y="7" width="18" height="10" rx="2"/><path d="M7 17v2m10-2v2"/></svg>
-              </span>
-              <div class="flex-1">
-                <span class="font-semibold text-blue-900 dark:text-white">Building a vector search backend in Node.js</span>
-                <span class="ml-auto flex items-center justify-center">
-                  <svg class="chevron h-7 w-7 text-green-400 transition-transform duration-300 group-aria-expanded:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-                </span>
-                <span id="about-blurb-3" class="block italic text-blue-700 dark:text-gray-200 text-base mt-3 hidden">Step through building a performant, scalable backend using JavaScript and Node.js, with hands-on code examples.</span>
-              </div>
-            </li>
-            <!-- Card 4: Globe -->
-            <li tabindex="0" role="button" aria-expanded="false" aria-controls="about-blurb-4" onclick="toggleBlurb('about-blurb-4', this)" onkeydown="if(event.key==='Enter'||event.key===' '){toggleBlurb('about-blurb-4', this)}" class="relative bg-purple-50 dark:bg-gray-700  transition-transform duration-200 hover:scale-105 active:scale-95 focus:outline-none focus-visible:ring-4 focus-visible:ring-teal-400 focus-visible:ring-offset-2 border-l-4 border-purple-400 rounded-lg shadow px-6 py-4 mb-0 flex items-start gap-4 cursor-pointer focus:outline-none focus:ring-2 focus:ring-purple-400 hover:scale-[1.03] hover:shadow-2xl transition-all group">
-              <span class="flex-shrink-0 mt-1 text-purple-500">
-                <!-- Globe Icon -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20"/></svg>
-              </span>
-              <div class="flex-1">
-                <span class="font-semibold text-blue-900 dark:text-white">Designing and optimizing search APIs</span>
-                <span class="ml-auto flex items-center justify-center">
-                  <svg class="chevron h-7 w-7 text-purple-400 transition-transform duration-300 group-aria-expanded:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-                </span>
-                <span id="about-blurb-4" class="block italic text-blue-700 dark:text-gray-200 text-base mt-3 hidden">Discover best practices for API design, including how to expose powerful vector search features to your applications.</span>
-              </div>
-            </li>
-            <!-- Card 5: Adjustments -->
-            <li tabindex="0" role="button" aria-expanded="false" aria-controls="about-blurb-5" onclick="toggleBlurb('about-blurb-5', this)" onkeydown="if(event.key==='Enter'||event.key===' '){toggleBlurb('about-blurb-5', this)}" class="relative bg-yellow-50 dark:bg-gray-700  transition-transform duration-200 hover:scale-105 active:scale-95 focus:outline-none focus-visible:ring-4 focus-visible:ring-teal-400 focus-visible:ring-offset-2 border-l-4 border-yellow-400 rounded-lg shadow px-6 py-4 mb-0 flex items-start gap-4 cursor-pointer focus:outline-none focus:ring-2 focus:ring-yellow-400 hover:scale-[1.03] hover:shadow-2xl transition-all group">
-              <span class="flex-shrink-0 mt-1 text-yellow-500">
-                <!-- Adjustments Icon -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6"/></svg>
-              </span>
-              <div class="flex-1">
-                <span class="font-semibold text-blue-900 dark:text-white">Hybrid and advanced search techniques</span>
-                <span class="ml-auto flex items-center justify-center">
-                  <svg class="chevron h-7 w-7 text-yellow-400 transition-transform duration-300 group-aria-expanded:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-                </span>
-                <span id="about-blurb-5" class="block italic text-blue-700 dark:text-gray-200 text-base mt-3 hidden">Explore hybrid approaches that combine traditional and vector search, and learn advanced methods for boosting relevance.</span>
-              </div>
-            </li>
-            <!-- Card 6: Chart Bar -->
-            <li tabindex="0" role="button" aria-expanded="false" aria-controls="about-blurb-6" onclick="toggleBlurb('about-blurb-6', this)" onkeydown="if(event.key==='Enter'||event.key===' '){toggleBlurb('about-blurb-6', this)}" class="relative bg-pink-50 dark:bg-gray-700  transition-transform duration-200 hover:scale-105 active:scale-95 focus:outline-none focus-visible:ring-4 focus-visible:ring-teal-400 focus-visible:ring-offset-2 border-l-4 border-pink-400 rounded-lg shadow px-6 py-4 mb-0 flex items-start gap-4 cursor-pointer focus:outline-none focus:ring-2 focus:ring-pink-400 hover:scale-[1.03] hover:shadow-2xl transition-all group">
-              <span class="flex-shrink-0 mt-1 text-pink-500">
-                <!-- Chart Bar Icon -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><rect x="3" y="13" width="4" height="8"/><rect x="9" y="9" width="4" height="12"/><rect x="15" y="5" width="4" height="16"/></svg>
-              </span>
-              <div class="flex-1">
-                <span class="font-semibold text-blue-900 dark:text-white">Real-world use cases and practical tips</span>
-                <span class="ml-auto flex items-center justify-center">
-                  <svg class="chevron h-7 w-7 text-pink-400 transition-transform duration-300 group-aria-expanded:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-                </span>
-                <span id="about-blurb-6" class="block italic text-blue-700 dark:text-gray-200 text-base mt-3 hidden">See how companies use vector search in production, and get actionable tips to avoid common pitfalls.</span>
-              </div>
-            </li>
-          </ul>
+      <div class="bg-gradient-to-br from-blue-50 via-teal-50 to-white rounded-xl shadow p-6 mb-6 md:flex md:items-center md:gap-8">
+        <div class="flex-shrink-0 flex justify-center items-center w-full md:w-40 mb-4 md:mb-0">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M12 2a10 10 0 100 20 10 10 0 000-20z"/></svg>
         </div>
+        <div class="flex-1 text-center md:text-left">
+          <p class="mb-1 text-xl md:text-2xl font-semibold text-blue-900">Vector search leverages <span class="text-teal-500 font-bold">advanced machine learning</span> to deliver relevant, context-aware results.</p>
+          <p class="mb-0 text-lg text-gray-700">This book covers:</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <details class="bg-blue-50 dark:bg-gray-700 border-l-4 border-blue-400 rounded-lg shadow px-6 py-4">
+          <summary class="flex items-center gap-3 cursor-pointer font-semibold text-blue-900 dark:text-white">
+            <span class="text-blue-500">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M12 2a10 10 0 100 20 10 10 0 000-20z"/></svg>
+            </span>
+            Why vector search matters
+          </summary>
+          <p class="mt-3 text-blue-700 dark:text-gray-200 italic">Understand the fundamental concepts behind vector search and why it’s revolutionizing how we build search systems.</p>
+        </details>
+        <details class="bg-teal-50 dark:bg-gray-700 border-l-4 border-teal-400 rounded-lg shadow px-6 py-4">
+          <summary class="flex items-center gap-3 cursor-pointer font-semibold text-blue-900 dark:text-white">
+            <span class="text-teal-500">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><rect x="4" y="4" width="16" height="16" rx="4"/><path d="M9 9h6v6H9z"/></svg>
+            </span>
+            Generating and using vector embeddings
+          </summary>
+          <p class="mt-3 text-blue-700 dark:text-gray-200 italic">Learn practical techniques to create, store, and leverage embeddings for real-world data and applications.</p>
+        </details>
+        <details class="bg-green-50 dark:bg-gray-700 border-l-4 border-green-400 rounded-lg shadow px-6 py-4">
+          <summary class="flex items-center gap-3 cursor-pointer font-semibold text-blue-900 dark:text-white">
+            <span class="text-green-500">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><rect x="3" y="7" width="18" height="10" rx="2"/><path d="M7 17v2m10-2v2"/></svg>
+            </span>
+            Building a Node.js backend in JavaScript
+          </summary>
+          <p class="mt-3 text-blue-700 dark:text-gray-200 italic">Step through building a performant, scalable backend using JavaScript and Node.js, with hands-on code examples.</p>
+        </details>
+        <details class="bg-purple-50 dark:bg-gray-700 border-l-4 border-purple-400 rounded-lg shadow px-6 py-4">
+          <summary class="flex items-center gap-3 cursor-pointer font-semibold text-blue-900 dark:text-white">
+            <span class="text-purple-500">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20"/></svg>
+            </span>
+            Designing and optimising search APIs
+          </summary>
+          <p class="mt-3 text-blue-700 dark:text-gray-200 italic">Discover best practices for API design, including how to expose powerful vector search features to your applications.</p>
+        </details>
+        <details class="bg-yellow-50 dark:bg-gray-700 border-l-4 border-yellow-400 rounded-lg shadow px-6 py-4">
+          <summary class="flex items-center gap-3 cursor-pointer font-semibold text-blue-900 dark:text-white">
+            <span class="text-yellow-500">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6"/></svg>
+            </span>
+            Hybrid and advanced search techniques
+          </summary>
+          <p class="mt-3 text-blue-700 dark:text-gray-200 italic">Explore hybrid approaches that combine traditional and vector search, and learn advanced methods for boosting relevance.</p>
+        </details>
+        <details class="bg-pink-50 dark:bg-gray-700 border-l-4 border-pink-400 rounded-lg shadow px-6 py-4">
+          <summary class="flex items-center gap-3 cursor-pointer font-semibold text-blue-900 dark:text-white">
+            <span class="text-pink-500">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><rect x="3" y="13" width="4" height="8"/><rect x="9" y="9" width="4" height="12"/><rect x="15" y="5" width="4" height="16"/></svg>
+            </span>
+            Real-world use cases and practical tips
+          </summary>
+          <p class="mt-3 text-blue-700 dark:text-gray-200 italic">See how companies use vector search in production, and get actionable tips to avoid common pitfalls.</p>
+        </details>
       </div>
     </section>
 
     <!-- Newsletter Signup -->
-    <section class="mb-10">
+    <section id="subscribe" class="scroll-mt-24 bg-white border border-teal-100 rounded-2xl p-8 shadow-xl">
       <h2 class="text-2xl font-bold text-blue-900 mb-3 inline-block border-b-4 border-transparent bg-gradient-to-r from-teal-400 to-pink-400 bg-clip-text text-transparent">Stay Updated!</h2>
-      <div id="newsletter" class="bg-white/80 dark:bg-gray-900/80 text-gray-900 dark:text-gray-100 border-l-4 border-teal-400 p-8 rounded-xl shadow-2xl backdrop-blur-md flex flex-col items-center">
-        <h2 class="text-2xl font-extrabold text-blue-900 dark:text-white mb-2">Stay Updated!</h2>
-        <p class="mb-4 text-lg text-gray-700 dark:text-gray-300 text-center">Subscribe for updates on Vector Search with JavaScript, the latest news in AI-powered search, and exclusive resources for developers. Stay ahead with insights, tools, and announcements about new releases and breakthroughs in search technology.</p>
+      <div id="newsletter" class="bg-teal-50/80 dark:bg-gray-900/80 text-gray-900 dark:text-gray-100 border border-teal-200 p-8 rounded-xl shadow-2xl backdrop-blur-md flex flex-col items-center">
+        <h3 class="text-2xl font-extrabold text-blue-900 dark:text-white mb-3">Stay Updated!</h3>
+        <ul class="mb-6 text-lg text-gray-700 dark:text-gray-300 text-left w-full max-w-md space-y-2">
+          <li class="flex items-start gap-2"><span class="mt-2 h-2 w-2 rounded-full bg-teal-400"></span>Updates on Vector Search with JavaScript</li>
+          <li class="flex items-start gap-2"><span class="mt-2 h-2 w-2 rounded-full bg-teal-400"></span>News in AI-powered search</li>
+          <li class="flex items-start gap-2"><span class="mt-2 h-2 w-2 rounded-full bg-teal-400"></span>Exclusive resources for developers</li>
+        </ul>
         <form action="https://yalladevrel.us11.list-manage.com/subscribe/post?u=0482ce648ffc928e3e918bbc4&amp;id=1afd060f35&amp;v_id=1442&amp;f_id=0067e7e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="w-full max-w-md" target="_blank">
-          <div class="flex flex-col sm:flex-row gap-3">
+          <div class="flex flex-col sm:flex-row gap-3 bg-white/80 dark:bg-gray-800/80 border border-teal-200 rounded-xl p-4 shadow-inner">
             <label for="mce-EMAIL" class="sr-only">Email Address</label>
             <input type="email" name="EMAIL" id="mce-EMAIL" class="flex-1 p-3 dark:bg-gray-800 dark:border-gray-600 dark:text-white border border-[#b2f5ea] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#38b2ac] focus:border-transparent" placeholder="Enter your email" required>
-            <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="bg-red-400 text-white px-6 py-3 rounded-lg font-semibold shadow-lg border border-red-400 hover:bg-red-500 focus:outline-none focus-visible:ring-4 focus-visible:ring-red-300 focus-visible:ring-offset-2 transition-transform duration-200 transform hover:scale-105 active:scale-95">Subscribe</button>
+            <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold shadow-lg border border-blue-600 hover:bg-blue-700 focus:outline-none focus-visible:ring-4 focus-visible:ring-blue-300 focus-visible:ring-offset-2 transition-transform duration-200 transform hover:scale-105 active:scale-95">Subscribe</button>
           </div>
           <div class="mt-4 text-sm text-gray-600 flex justify-center">
             <img src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" alt="Intuit Mailchimp" class="w-40 h-auto">
@@ -255,7 +230,7 @@
     </section>
 
     <!-- Author Bio -->
-    <section class="mb-10 flex items-center gap-6 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 border-2 border-teal-400 rounded-xl p-6 shadow-lg">
+    <section id="author" class="scroll-mt-24 flex flex-col sm:flex-row items-center gap-6 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 border-2 border-teal-400 rounded-xl p-6 shadow-lg">
       <img src="ben.png" alt="Ben Greenberg photo" class="w-20 h-20 rounded-full border-2 border-teal-400 shadow-md object-cover">
       <div>
         <h2 class="text-xl font-extrabold text-blue-900 dark:text-white mb-1">About the Author</h2>
@@ -264,38 +239,36 @@
       </div>
     </section>
 
+    <!-- Bottom Call to Action -->
+    <section class="bg-blue-900 text-white rounded-2xl p-8 shadow-xl flex flex-col items-center text-center">
+      <h2 class="text-2xl font-bold mb-2">Ready to dive in?</h2>
+      <p class="mb-4 text-blue-100">Get the book and start building intelligent search systems today.</p>
+      <div class="flex flex-col sm:flex-row gap-4">
+        <a href="https://pragprog.com/titles/bgvector/vector-search-with-javascript/" class="inline-flex items-center justify-center bg-white text-blue-900 px-5 py-2 rounded-lg font-semibold shadow-lg border border-white hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-200 transition" target="_blank" rel="noopener">Get Your Copy</a>
+        <a href="#hero" class="inline-flex items-center justify-center text-blue-100 hover:text-white underline">Back to top</a>
+      </div>
+    </section>
+
     <!-- Footer / Publisher -->
   </div>
   <footer class="text-center py-6 text-sm text-white bg-blue-900 dark:bg-gray-950 mt-10 rounded-b-xl">
-    <p>&copy; <span id="footer-year"></span> Ben Greenberg. Published by <a href="https://pragprog.com/titles/bgvector/vector-search-with-javascript/" class="text-red-500 hover:underline">The Pragmatic Bookshelf</a>.</p>
-    <a href="https://github.com/hummusonrails/vector-example-blog-platform" target="_blank" rel="noopener" class="inline-block mt-2" title="View Example Project on GitHub">
+    <p>&copy; <span id="footer-year"></span> Ben Greenberg. Published by <a href="https://pragprog.com/titles/bgvector/vector-search-with-javascript/" class="text-red-300 hover:underline">The Pragmatic Bookshelf</a>.</p>
+    <div class="mt-3 flex flex-wrap justify-center gap-4 text-white/90">
+      <a href="https://twitter.com/hummusonrails" class="inline-flex items-center gap-2 hover:underline">
+        <i class="fab fa-twitter"></i> @hummusonrails
+      </a>
+      <a href="https://github.com/hummusonrails/vector-example-blog-platform" target="_blank" rel="noopener" class="inline-flex items-center gap-2 hover:underline" title="View Example Project on GitHub">
+        <i class="fab fa-github"></i> Example Project
+      </a>
+      <a href="https://pragprog.com/titles/bgvector/vector-search-with-javascript/" class="inline-flex items-center gap-2 hover:underline">Pragmatic Bookshelf</a>
+    </div>
+    <div class="mt-3">
       <svg class="mx-auto" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="color:white;" xmlns="http://www.w3.org/2000/svg">
         <path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.426 2.865 8.18 6.839 9.504.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.461-1.11-1.461-.908-.62.069-.608.069-.608 1.004.07 1.533 1.032 1.533 1.032.892 1.53 2.341 1.089 2.91.833.091-.647.35-1.089.636-1.34-2.221-.254-4.555-1.113-4.555-4.951 0-1.093.39-1.987 1.029-2.687-.104-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.295 2.748-1.025 2.748-1.025.546 1.378.204 2.397.1 2.65.64.7 1.028 1.594 1.028 2.687 0 3.847-2.337 4.695-4.566 4.945.359.309.679.919.679 1.853 0 1.338-.012 2.419-.012 2.749 0 .267.18.577.688.479C19.138 20.197 22 16.444 22 12.021 22 6.484 17.523 2 12 2Z" fill="currentColor"/>
       </svg>
-    </a>
+    </div>
     <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
   </footer>
-<script>
-function toggleBlurb(id, btn) {
-  const blurb = document.getElementById(id);
-  const expanded = btn.getAttribute('aria-expanded') === 'true';
-  blurb.classList.toggle('hidden');
-  btn.setAttribute('aria-expanded', !expanded);
-  btn.querySelector('svg').classList.toggle('rotate-90');
-}
-
-const aboutToggle = document.getElementById('about-toggle');
-const aboutContent = document.getElementById('about-content');
-const aboutChevron = document.getElementById('about-chevron');
-if (aboutToggle && aboutContent && aboutChevron) {
-  aboutToggle.addEventListener('click', function() {
-    const expanded = aboutToggle.getAttribute('aria-expanded') === 'true';
-    aboutContent.classList.toggle('hidden');
-    aboutToggle.setAttribute('aria-expanded', !expanded);
-    aboutChevron.classList.toggle('rotate-180', !expanded);
-  });
-}
-</script>
   <!-- Scroll Progress Bar -->
   <div id="scroll-progress" class="fixed top-0 left-0 h-1 bg-gradient-to-r from-blue-400 via-teal-400 to-pink-400 z-50 transition-all duration-200" style="width:0%"></div>
   <script>
